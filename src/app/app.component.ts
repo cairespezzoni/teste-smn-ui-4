@@ -5,9 +5,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'ÃÉÕ';
+  date = this.getdate();
 
   constructor() {
 
+  }
+  getdate() {
+    let date = new Date();
+    date.setDate(date.getDate() + 1);
+    return date;
   }
 }
