@@ -1,28 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<nav>
+  <h1>
+    Documentação Angular 4
+  </h1>
 
-<p ui-perceptive="#ffffff" primarycolor="gray">aaaa</p>
-<p ui-perceptive="#7e849c" primarycolor="blue" secondarycolor="pink">bbbbb</p>
-<p ui-perceptive="#cc3399">cccccc</p>
-<div style="padding:200px" secondarycolor="purple" ui-perceptive="#3333cc" backcolor="true">
-  <p ui-perceptive="#3333cc" primarycolor="red" secondarycolor="red">ddddd</p>
-</div>
+  <a routerLink="/">Home</a>
+  <a routerLink="/profile">Profile</a>
+</nav>
 
-<input type="text">
-<input type="text" ui-autofocus>
+<router-outlet></router-outlet>
 
-<p> {{title | uiunaccent}}</p>
-<p> {{date | uistringdate}}</p>
-
-<ui-profile-float nosrc="https://upload.wikimedia.org/wikipedia/pt/a/ac/Vegeta.jpg" src="http://vignette2.wikia.nocookie.net/joke-battles/images/0/09/Goku.png/revision/latest?cb=20151230234609"></ui-profile-float>
-
-
-<ui-input label="batatinha">
-  <input type="text" class="ui-control" [(ngModel)]="title" value="goku">
-</ui-input>
-
-
-<ui-floating-card-container>
-Clique em qualquer lugar para fechar a modal
-</ui-floating-card-container>
