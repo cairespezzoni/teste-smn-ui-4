@@ -5,13 +5,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  
-  title = 'ÃÉÕ';
-  // date = this.getdate();
-  teste: string = '';
 
-  constructor() {
-
-  }
+  constructor() {}
  
 }

@@ -5,7 +5,7 @@
 <p ui-perceptive="#ffffff" primarycolor="gray">aaaa</p>
 <p ui-perceptive="#7e849c" primarycolor="blue" secondarycolor="pink">bbbbb</p>
 <p ui-perceptive="#cc3399">cccccc</p>
-<div style="padding:200px" secondarycolor="purple" ui-perceptive="#3333cc" backcolor="true">
+<div style="padding:10px" secondarycolor="purple" ui-perceptive="#3333cc" backcolor="true">
   <p ui-perceptive="#3333cc" primarycolor="red" secondarycolor="red">ddddd</p>
 </div>
 
@@ -18,6 +18,7 @@
 <ui-profile-float nosrc="https://upload.wikimedia.org/wikipedia/pt/a/ac/Vegeta.jpg" src="http://vignette2.wikia.nocookie.net/joke-battles/images/0/09/Goku.png/revision/latest?cb=20151230234609"></ui-profile-float>
 
 
-<ui-input label="batatinha">
-  <input type="text" class="ui-control" [(ngModel)]="title" value="goku">
+<ui-input>
+  <input type="text" [(ngModel)]="nome">
+  <label>Nome</label>
 </ui-input>
