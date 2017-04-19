@@ -1,6 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<nav>
+  <h1>
+    Documentação Angular 4
+  </h1>
 
 <p ui-perceptive="#ffffff" primarycolor="gray">aaaa</p>
 <p ui-perceptive="#7e849c" primarycolor="blue" secondarycolor="pink">bbbbb</p>
@@ -8,14 +9,9 @@
 <div style="padding:10px" secondarycolor="purple" ui-perceptive="#3333cc" backcolor="true">
   <p ui-perceptive="#3333cc" primarycolor="red" secondarycolor="red">ddddd</p>
 </div>
+  <a routerLink="/">Home</a>
+  <a routerLink="/profile">Profile</a>
+  <a routerLink="/floatingcard">Floating Card</a>
+</nav>
 
-<input type="text">
-<input type="text" ui-autofocus>
-
-<p> {{title | uiunaccent}}</p>
-<p> {{date | uistringdate}}</p>
-
-<!--INPUT-->
-<ui-input></ui-input>
-
-<ui-profile-float nosrc="https://upload.wikimedia.org/wikipedia/pt/a/ac/Vegeta.jpg" src="http://vignette2.wikia.nocookie.net/joke-battles/images/0/09/Goku.png/revision/latest?cb=20151230234609"></ui-profile-float>
+<router-outlet></router-outlet>

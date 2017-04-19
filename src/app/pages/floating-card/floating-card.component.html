@@ -1,0 +1,27 @@
+<ui-card>
+  <div class="media-area ui-flex center" ng-style="::{'background-image': curso .imagem ? 'url(' + curso.imagem + ')' : '', 'background-color': curso.cor, 'color': vm.corFundoClaro(curso.cor) ? 'black': 'white'}">
+    <div style="text-align: center" ng-bind="::!curso.imagem ? curso.nome.charAt(0).toUpperCase() : ''"></div>
+    <button class="ui-button icon xsmall favorito" ng-click="vm.toggleFavorito(curso)">
+                                <i class="material-icons grey-50" ng-if="!curso.favorito">favorite_border</i>
+                                <i class="material-icons grey-50" ng-if="curso.favorito">favorite</i>
+                            </button>
+    <button class="ui-button icon xsmall favorito" style="left: 8px">
+                                <i class="material-icons grey-50">school</i>
+                            </button>
+  </div>
+  <div class="wrap-fab" style="position: relative">
+    <button class="ui-button icon fill primary float small">
+                                <i class="material-icons">play_arrow</i>
+                            </button>
+  </div>
+  <ui-card-title class="ui-title card dense">
+    <span ng-bind="curso.nome"></span>
+  </ui-card-title>
+  <ui-card-content class="ui-secondary" ng-bind="curso.resumo"></ui-card-content>
+  <div class="progress-bar ui-flex space-8 center">
+    <div class="bg-grey-400 bar">
+      <div class="progress bg-blue-500" ng-class="{'bg-green-500': curso.percentual === 100}" ng-style="{'width': curso.percentual ? curso.percentual + '%' : 0}"></div>
+    </div>
+    <div class="flex-none label ui-secondary" ng-bind="curso.percentual ? curso.percentual + '%': '--'"></div>
+  </div>
+</ui-card>
